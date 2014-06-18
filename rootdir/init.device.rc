@@ -13,3 +13,10 @@ on boot
 
     # Vibrator
     chown system system /sys/devices/i2c-2/2-0049/intensity
+
+# Touch
+on property:sys.screen_on=0
+    write /sys/devices/virtual/input/max1187x/screen_status 0
+
+on property:sys.screen_on=1
+    write /sys/devices/virtual/input/max1187x/screen_status 1
