@@ -25,6 +25,8 @@ TARGET_SPECIFIC_HEADER_PATH += device/sony/sirius/include
 
 BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/sony/sirius/bluetooth
 
+TARGET_GCC_VERSION := 4.7
+
 # Kernel properties
 TARGET_KERNEL_CONFIG := cm_shinano_sirius_defconfig
 
