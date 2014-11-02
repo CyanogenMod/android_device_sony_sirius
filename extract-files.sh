@@ -1,5 +1,6 @@
 #!/bin/bash
 
+export LC_ALL=C
 export DEVICE=${PWD##*/}
 export BOARDCONFIGVENDOR=true
 
