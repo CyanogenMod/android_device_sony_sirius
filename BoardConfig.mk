@@ -23,8 +23,6 @@ TARGET_OTA_ASSERT_DEVICE := D6502,D6503,D6506,D6543,sirius
 
 TARGET_SPECIFIC_HEADER_PATH += device/sony/sirius/include
 
-BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/sony/sirius/bluetooth
-
 BOARD_HARDWARE_CLASS += device/sony/sirius/cmhw
 
 # Kernel properties
