@@ -1,0 +1,2 @@
+/sys/devices/virtual/input/max1187x/glove -- u:object_r:sysfs_touch:s0
+/sys/devices/virtual/input/max1187x/power/wakeup -- u:object_r:sysfs_touch:s0
