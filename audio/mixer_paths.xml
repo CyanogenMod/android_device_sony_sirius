@@ -589,6 +589,11 @@
         <path name="low-latency-playback incall-music" />
     </path>
 
+    <path name="low-latency-playback voice-speaker">
+        <path name="low-latency-playback speaker" />
+        <path name="low-latency-playback" />
+    </path>
+
     <path name="multi-channel-playback hdmi">
         <ctl name="HDMI Mixer MultiMedia2" value="1" />
     </path>
@@ -742,6 +747,11 @@
     </path>
 
     <path name="voice-call speaker">
+        <ctl name="QUAT_MI2S_RX_Voice Mixer CSVoice" value="1" />
+        <ctl name="Voice_Tx Mixer SLIM_0_TX_Voice" value="1" />
+    </path>
+
+    <path name="voice-call voice-speaker">
         <ctl name="QUAT_MI2S_RX_Voice Mixer CSVoice" value="1" />
         <ctl name="Voice_Tx Mixer SLIM_0_TX_Voice" value="1" />
     </path>
