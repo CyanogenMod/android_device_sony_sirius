@@ -209,6 +209,7 @@ etc/firmware/touch_chip_id_0x78_config_id_0x0609.bin
 etc/firmware/touch_chip_id_0x78_config_id_0x0659.bin
 etc/firmware/touch_chip_id_0x78_config_id_0x0681.bin
 etc/firmware/touch_chip_id_0x78_config_id_0x0689.bin
+etc/touch_fw_update.sh
 usr/idc/max1187x_touchscreen_0.idc
 
 # WiFi firmware
