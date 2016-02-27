@@ -56,6 +56,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
    $(LOCAL_PATH)/bcmdhd.cal:system/etc/wifi/bcmdhd.cal
 
+# Touchscreen
+PRODUCT_COPY_FILES += \
+   $(LOCAL_PATH)/max1187x_touchscreen_0.idc:system/usr/idc/max1187x_touchscreen_0.idc
+
 # call dalvik heap config
 $(call inherit-product, frameworks/native/build/phone-xxhdpi-2048-dalvik-heap.mk)
 
