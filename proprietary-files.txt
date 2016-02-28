@@ -1,3 +1,6 @@
+# Bluetooth
+etc/firmware/BCM43xx.hcd
+
 # Modem D6502
 etc/firmware/d6502/mba.b00
 etc/firmware/d6502/modem.b01
