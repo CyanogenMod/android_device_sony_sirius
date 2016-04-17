@@ -1,16 +1,32 @@
-# Audio
-etc/audio_policy.conf
-etc/mixer_paths.xml
-
-# Audio BLOBS
-lib/hw/audio.primary.msm8974.so
-
 # Audio ACDB
+etc/acdbdata/Fluid/Fluid_Bluetooth_cal.acdb
+etc/acdbdata/Fluid/Fluid_General_cal.acdb
+etc/acdbdata/Fluid/Fluid_Global_cal.acdb
+etc/acdbdata/Fluid/Fluid_Handset_cal.acdb
+etc/acdbdata/Fluid/Fluid_Hdmi_cal.acdb
+etc/acdbdata/Fluid/Fluid_Headset_cal.acdb
 etc/acdbdata/Fluid/Fluid_Speaker_cal.acdb
+etc/acdbdata/Liquid/Liquid_Bluetooth_cal.acdb
+etc/acdbdata/Liquid/Liquid_General_cal.acdb
+etc/acdbdata/Liquid/Liquid_Global_cal.acdb
 etc/acdbdata/Liquid/Liquid_Handset_cal.acdb
+etc/acdbdata/Liquid/Liquid_Hdmi_cal.acdb
+etc/acdbdata/Liquid/Liquid_Headset_cal.acdb
 etc/acdbdata/Liquid/Liquid_Speaker_cal.acdb
+etc/acdbdata/MTP/MTP_Bluetooth_cal.acdb
+etc/acdbdata/MTP/MTP_General_cal.acdb
+etc/acdbdata/MTP/MTP_Global_cal.acdb
 etc/acdbdata/MTP/MTP_Handset_cal.acdb
+etc/acdbdata/MTP/MTP_Hdmi_cal.acdb
+etc/acdbdata/MTP/MTP_Headset_cal.acdb
 etc/acdbdata/MTP/MTP_Speaker_cal.acdb
+etc/acdbdata/Sony/Sony_Bluetooth_cal.acdb
+etc/acdbdata/Sony/Sony_General_cal.acdb
+etc/acdbdata/Sony/Sony_Global_cal.acdb
+etc/acdbdata/Sony/Sony_Handset_cal.acdb
+etc/acdbdata/Sony/Sony_Hdmi_cal.acdb
+etc/acdbdata/Sony/Sony_Headset_cal.acdb
+etc/acdbdata/Sony/Sony_Speaker_cal.acdb
 
 # ADSP
 etc/firmware/adsp.b00
@@ -27,6 +43,9 @@ etc/firmware/adsp.b10
 etc/firmware/adsp.b11
 etc/firmware/adsp.b12
 etc/firmware/adsp.mdt
+
+# Bluetooth
+etc/firmware/BCM43xx.hcd
 
 # Camera
 etc/flashled_calc_parameters.cfg
@@ -53,14 +72,21 @@ vendor/lib/libmmcamera2_stats_algorithm.so
 vendor/lib/libmmcamera2_stats_modules.so
 vendor/lib/liboemcamera.so
 
-# Leds
-bin/illumination_service
+# HDCP
+etc/firmware/tzhdcp.b00
+etc/firmware/tzhdcp.b01
+etc/firmware/tzhdcp.b02
+etc/firmware/tzhdcp.b03
+etc/firmware/tzhdcp.mdt
 
 # Misc
 bin/chargemon
 bin/updatemiscta
 
 # Modem
+bin/sct_service
+etc/firmware/mba.b00
+etc/firmware/mba.mdt
 etc/firmware/modem.b00
 etc/firmware/modem.b01
 etc/firmware/modem.b02
@@ -102,13 +128,6 @@ bin/suntrold
 bin/sensors.qcom
 vendor/lib/libsensor1.so
 etc/sensor_def_qcomdev.conf
-etc/sensors_calib.conf
-
-# Sysmon
-etc/sysmon.cfg
-lib/libsysmon_jni.so
-lib/sysmon/sysmon_torch_limit.so
-lib/sysmon/sysmon_v_therm2.so
 
 # TFA98XX DSP
 etc/sforce/sforce_coef_music.bin
@@ -144,36 +163,14 @@ etc/tfa98xx/VoiceCallSpeaker_top.eq
 etc/tfa98xx/VoiceCallSpeaker_top.preset
 
 # TouchScreen
-etc/firmware/touch_chip_id_0x75_config_id_0x0108.bin
-etc/firmware/touch_chip_id_0x75_config_id_0x0109.bin
-etc/firmware/touch_chip_id_0x75_config_id_0x010a.bin
-etc/firmware/touch_chip_id_0x75_config_id_0x0118.bin
-etc/firmware/touch_chip_id_0x75_config_id_0x0119.bin
-etc/firmware/touch_chip_id_0x75_config_id_0x011a.bin
-etc/firmware/touch_chip_id_0x75_config_id_0x0141.bin
-etc/firmware/touch_chip_id_0x75_config_id_0x0142.bin
-etc/firmware/touch_chip_id_0x75_config_id_0x0151.bin
-etc/firmware/touch_chip_id_0x75_config_id_0x0152.bin
-etc/firmware/touch_chip_id_0x75_config_id_0x0181.bin
-etc/firmware/touch_chip_id_0x75_config_id_0x0191.bin
 etc/firmware/touch_chip_id_0x75_config_id_0x0241.bin
 etc/firmware/touch_chip_id_0x75_config_id_0x0251.bin
-etc/firmware/touch_chip_id_0x75_config_id_0x0281.bin
-etc/firmware/touch_chip_id_0x75_config_id_0x0291.bin
-etc/firmware/touch_chip_id_0x75_config_id_0x0395.bin
 etc/firmware/touch_chip_id_0x78_config_id_0x0108.bin
 etc/firmware/touch_chip_id_0x78_config_id_0x0109.bin
 etc/firmware/touch_chip_id_0x78_config_id_0x010c.bin
-etc/firmware/touch_chip_id_0x78_config_id_0x010e.bin
-etc/firmware/touch_chip_id_0x78_config_id_0x0118.bin
-etc/firmware/touch_chip_id_0x78_config_id_0x0119.bin
-etc/firmware/touch_chip_id_0x78_config_id_0x0141.bin
 etc/firmware/touch_chip_id_0x78_config_id_0x0146.bin
-etc/firmware/touch_chip_id_0x78_config_id_0x0148.bin
-etc/firmware/touch_chip_id_0x78_config_id_0x0149.bin
 etc/firmware/touch_chip_id_0x78_config_id_0x0151.bin
 etc/firmware/touch_chip_id_0x78_config_id_0x0154.bin
-etc/firmware/touch_chip_id_0x78_config_id_0x0156.bin
 etc/firmware/touch_chip_id_0x78_config_id_0x0158.bin
 etc/firmware/touch_chip_id_0x78_config_id_0x0159.bin
 etc/firmware/touch_chip_id_0x78_config_id_0x015c.bin
@@ -181,21 +178,18 @@ etc/firmware/touch_chip_id_0x78_config_id_0x0181.bin
 etc/firmware/touch_chip_id_0x78_config_id_0x0184.bin
 etc/firmware/touch_chip_id_0x78_config_id_0x0188.bin
 etc/firmware/touch_chip_id_0x78_config_id_0x0189.bin
-etc/firmware/touch_chip_id_0x78_config_id_0x018b.bin
 etc/firmware/touch_chip_id_0x78_config_id_0x018c.bin
-etc/firmware/touch_chip_id_0x78_config_id_0x018d.bin
 etc/firmware/touch_chip_id_0x78_config_id_0x0191.bin
 etc/firmware/touch_chip_id_0x78_config_id_0x0198.bin
 etc/firmware/touch_chip_id_0x78_config_id_0x0199.bin
 etc/firmware/touch_chip_id_0x78_config_id_0x0241.bin
+etc/firmware/touch_chip_id_0x78_config_id_0x0244.bin
 etc/firmware/touch_chip_id_0x78_config_id_0x0246.bin
 etc/firmware/touch_chip_id_0x78_config_id_0x0247.bin
 etc/firmware/touch_chip_id_0x78_config_id_0x0251.bin
 etc/firmware/touch_chip_id_0x78_config_id_0x0254.bin
 etc/firmware/touch_chip_id_0x78_config_id_0x0256.bin
 etc/firmware/touch_chip_id_0x78_config_id_0x0257.bin
-etc/firmware/touch_chip_id_0x78_config_id_0x0399.bin
-etc/firmware/touch_chip_id_0x78_config_id_0x039d.bin
 etc/firmware/touch_chip_id_0x78_config_id_0x0408.bin
 etc/firmware/touch_chip_id_0x78_config_id_0x0409.bin
 etc/firmware/touch_chip_id_0x78_config_id_0x040b.bin
@@ -215,7 +209,10 @@ etc/firmware/touch_chip_id_0x78_config_id_0x0609.bin
 etc/firmware/touch_chip_id_0x78_config_id_0x0659.bin
 etc/firmware/touch_chip_id_0x78_config_id_0x0681.bin
 etc/firmware/touch_chip_id_0x78_config_id_0x0689.bin
+etc/touch_fw_update.sh
 usr/idc/max1187x_touchscreen_0.idc
 
 # WiFi firmware
 etc/firmware/wlan/bcmdhd/bcmdhd.cal
+etc/firmware/wlan/bcmdhd/fw_bcmdhd_apsta.bin
+etc/firmware/wlan/bcmdhd/fw_bcmdhd.bin
